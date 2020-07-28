@@ -16,7 +16,8 @@ flutter:
         default_package: google_sign_in_web
 
 dependencies:
-  google_sign_in_platform_interface: ^1.1.1
+  google_sign_in_platform_interface:
+    path: '../google_sign_in_platform_interface'
   flutter:
     sdk: flutter
   meta: ^1.0.4
@@ -25,7 +26,11 @@ dependencies:
   # validation, so we set a ^ constraint.
   # TODO(amirh): Revisit this (either update this part in the  design or the pub tool).
   # https://github.com/flutter/flutter/issues/46264
-  google_sign_in_web: ^0.9.1
+  google_sign_in_web:
+    git:
+      url: https://github.com/assemmarwan/plugins
+      path: packages/google_sign_in/google_sign_in_web
+      ref: 948222ddb5a5d2ad424fdf3a387f4369b4550f18
 
 dev_dependencies:
   http: ^0.12.0
